@@ -1,24 +1,12 @@
 {
   "name": "humansnotbiz",
   "version": "1.0.0",
-  "description": "<!-- **humansnotbiz/humansnotbiz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
+    "dev": "npx @11ty/eleventy --serve",
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/humansnotbiz/humansnotbiz.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/humansnotbiz/humansnotbiz/issues"
-  },
-  "homepage": "https://github.com/humansnotbiz/humansnotbiz#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2"
   }
