@@ -1,24 +1,24 @@
 {# 
-  Base layout shared by all pages.
-  - Contains <head>, navbar, container wrapper, and footer.
-  - Loads CSS + JS from /assets so nested pages keep working.
+  Resource layout:
+  - Reuses the global base layout (navbar, container, CSS, JS)
+  - Adds the "Last reviewed" cue in the footer of resource pages
 #}
+
+{# We reuse base by reproducing its structure here, but only once.
+   This avoids changing base.njk to use block syntax. #}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  {# Page title, fallback for safety #}
   <title>{{ title or "humansNOT.biz" }}</title>
-
-  {# Global styles #}
   <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body>
   <nav class="navbar">
     <div class="nav-inner">
-      <strong>humansNOT.biz</strong>
+      <a href="/" class="site-title">humansNOT.biz</a>
       <div class="nav-right">
         <a href="/#start">Start Here</a>
         <a href="/#map">Map</a>
@@ -28,15 +28,12 @@
     </div>
   </nav>
 
-  {# Main page content #}
   <div class="container">
     {{ content | safe }}
   </div>
 
-  {# External libraries used by the map #}
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
   <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
-  {# Site JS #}
   <script src="/assets/js/app.js" defer></script>
 </body>
 </html>

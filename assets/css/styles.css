@@ -62,10 +62,12 @@ a:hover {
     color: var(--text);
 }
 
+/* Keep all content the same readable width */
 .container {
     max-width: 1100px;
+    /* adjust if you want wider/narrower */
     margin: 0 auto;
-    padding: 2.25rem 1.25rem 5rem;
+    padding: 0 16px;
 }
 
 header {
@@ -234,15 +236,17 @@ section.anchor {
     background: rgba(160, 166, 184, 0.7);
 }
 
-/* Map + Causes side-by-side */
+/* Map (left) + Causes list (right) */
 .map-causes-grid {
     display: grid;
-    grid-template-columns: 1.4fr 0.6fr;
-    gap: 1.25rem;
-    margin-top: 1.75rem;
+    grid-template-columns: 1.2fr 0.8fr;
+    /* map wider than list */
+    gap: 16px;
     align-items: start;
 }
 
+
+/* On small screens, stack them */
 @media (max-width: 900px) {
     .map-causes-grid {
         grid-template-columns: 1fr;
@@ -266,6 +270,7 @@ section.anchor {
     flex-direction: column;
     gap: 0.75rem;
     min-height: 240px;
+    width: 100%;
 }
 
 .card h2 {
@@ -319,4 +324,31 @@ footer {
     background: rgba(122, 162, 255, 0.08);
     border-color: var(--accent);
     text-decoration: none;
+}
+
+.page-footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.page-meta {
+    opacity: 0.75;
+}
+
+.review-status {
+    font-size: 0.85rem;
+}
+
+.review-status {
+    font-size: 0.85rem;
+    opacity: 0.75;
+    cursor: help;
+    /* hints there’s a tooltip */
+}
+
+.site-title {
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
 }

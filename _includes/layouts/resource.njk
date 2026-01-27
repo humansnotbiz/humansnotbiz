@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+---
+
+{% block content %}
+  {{ content | safe }}
+
+  <!-- Resource review footer -->
+  <footer class="page-footer">
+  {% if lastReviewed %}
+    {% set status = lastReviewed | reviewStatus %}
+    {% if status %}
+      <small
+        class="review-status"
+        title="{{ status.label }}"
+        aria-label="{{ status.label }}"
+      >
+        {{ status.icon }}
+        Last reviewed: {{ lastReviewed | shortDate }}
+      </small>
+    {% endif %}
+  {% endif %}
+</footer>
+
+
+{% endblock %}
