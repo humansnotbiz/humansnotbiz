@@ -1,0 +1,322 @@
+/*
+  Global stylesheet.
+  IMPORTANT: keep selectors stable (navbar, container, map IDs/classes),
+  because app.js relies on #causeMap, #typedTarget, #toggleArchived, #placeFilter.
+*/
+
+:root {
+    --bg: #0f1115;
+    --card: #171a21;
+    --text: #e6e8ee;
+    --muted: #a0a6b8;
+    --accent: #7aa2ff;
+    --border: #262a36;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(15, 17, 21, 0.9);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right a {
+    margin-left: 1rem;
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+.nav-right a:hover {
+    color: var(--text);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.25rem 1.25rem 5rem;
+}
+
+header {
+    margin-bottom: 1.25rem;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.tagline {
+    font-size: 3rem;
+    color: var(--text);
+    max-width: 46rem;
+    margin: 0;
+}
+
+.tagline.small {
+    font-size: 1rem;
+}
+
+section.anchor {
+    scroll-margin-top: 88px;
+}
+
+.hint {
+    margin-top: 0.25rem;
+    color: var(--muted);
+}
+
+/* Typing animation */
+.cursor {
+    display: inline-block;
+    width: 0.6ch;
+    margin-left: 0.1ch;
+    border-right: 2px solid var(--muted);
+    animation: blink 1s steps(2, start) infinite;
+    transform: translateY(2px);
+}
+
+@keyframes blink {
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* Map */
+.map-wrap {
+    margin-top: 1.5rem;
+}
+
+.map-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.map-head h2 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.map-sub {
+    margin: 0.25rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+/* Reuse the same card styling */
+.map-card.card {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+    /* important */
+    padding: 1.5rem;
+    /* match .card */
+}
+
+/* If you keep .map-wrap margin-top, it applies to BOTH columns, which is fine */
+.map-wrap {
+    margin-top: 1.5rem;
+}
+
+
+#causeMap {
+    width: 100%;
+    height: 380px;
+    display: block;
+}
+
+.map-menu {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: rgba(15, 17, 21, 0.75);
+    backdrop-filter: blur(8px);
+    color: var(--muted);
+    font-size: 0.9rem;
+    user-select: none;
+}
+
+.map-menu select:focus {
+    outline: none;
+}
+
+.map-menu label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.map-menu input[type="checkbox"] {
+    transform: translateY(0.5px);
+}
+
+.sep {
+    opacity: .6;
+}
+
+.place-label {
+    gap: .35rem;
+}
+
+#placeFilter {
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: .25rem .5rem;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 0.75rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    display: inline-block;
+}
+
+.dot.active {
+    background: var(--accent);
+}
+
+.dot.archived {
+    background: rgba(160, 166, 184, 0.7);
+}
+
+/* Map + Causes side-by-side */
+.map-causes-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 1.25rem;
+    margin-top: 1.75rem;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .map-causes-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.75rem;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-height: 240px;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.card p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.card ul {
+    padding-left: 1.1rem;
+    margin: 0.5rem 0 0;
+}
+
+.card li {
+    margin: 0.25rem 0;
+}
+
+.card-wide {
+    grid-column: 1 / -1;
+    min-height: auto;
+}
+
+.section-gap {
+    margin-top: 2rem;
+}
+
+footer {
+    margin-top: 4rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.github-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0;
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+.github-button:hover {
+    background: rgba(122, 162, 255, 0.08);
+    border-color: var(--accent);
+    text-decoration: none;
+}

@@ -1,0 +1,132 @@
+[
+    {
+        "id": "cause-gaza",
+        "label": "Gaza",
+        "place": "Gaza",
+        "coords": [
+            34.308,
+            31.354
+        ],
+        "status": "active"
+    },
+    {
+        "id": "cause-usa",
+        "label": "United States",
+        "place": "United States",
+        "coords": [
+            -98.5795,
+            39.8283
+        ],
+        "status": "active"
+    },
+    {
+        "id": "cause-ukraine",
+        "label": "Ukraine",
+        "place": "Ukraine",
+        "coords": [
+            31.1656,
+            48.3794
+        ],
+        "status": "active"
+    },
+    {
+        "id": "cause-iran",
+        "label": "Iran",
+        "place": "Iran",
+        "coords": [
+            53.688,
+            32.4279
+        ],
+        "status": "active"
+    },
+    {
+        "id": "cause-drc",
+        "label": "DRC (Congo)",
+        "place": "Democratic Republic of the Congo",
+        "coords": [
+            23.656,
+            -2.8797
+        ],
+        "status": "active"
+    },
+    {
+        "id": "cause-venezuela",
+        "label": "Venezuela",
+        "place": "Venezuela",
+        "coords": [
+            -66.5897,
+            6.4238
+        ],
+        "status": "active"
+    },
+    {
+        "id": "cause-sudan",
+        "label": "Sudan",
+        "place": "Sudan",
+        "coords": [
+            30.2176,
+            12.8628
+        ],
+        "status": "active"
+    },
+    {
+        "id": "cause-haiti",
+        "label": "Haiti",
+        "place": "Haiti",
+        "coords": [
+            -72.2852,
+            18.9712
+        ],
+        "status": "active"
+    },
+    {
+        "id": "cause-myanmar",
+        "label": "Myanmar",
+        "place": "Myanmar",
+        "coords": [
+            95.956,
+            21.9162
+        ],
+        "status": "active"
+    },
+    {
+        "id": "cause-syria",
+        "label": "Syria",
+        "place": "Syria",
+        "coords": [
+            38.9968,
+            34.8021
+        ],
+        "status": "active"
+    },
+    {
+        "id": "cause-yemen",
+        "label": "Yemen",
+        "place": "Yemen",
+        "coords": [
+            48.5164,
+            15.5527
+        ],
+        "status": "active"
+    },
+    {
+        "id": "cause-afghanistan",
+        "label": "Afghanistan",
+        "place": "Afghanistan",
+        "coords": [
+            67.71,
+            33.94
+        ],
+        "status": "archived"
+    },
+    {
+        "id": "cause-ethiopia",
+        "label": "Ethiopia",
+        "place": "Ethiopia",
+        "coords": [
+            40.49,
+            9.145
+        ],
+        "status": "archived"
+    }
+]

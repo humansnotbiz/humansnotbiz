@@ -1,3 +1,123 @@
-# It works
+---
+layout: layouts/base.njk
+title: Humans Not Biz
+---
 
-If you can read this, Eleventy is building pages correctly.
+<header>
+  <p class="tagline">
+    Humans, not <span id="typedTarget"></span><span class="cursor" aria-hidden="true"></span>
+  </p>
+</header>
+
+<section id="start" class="anchor" aria-label="Start here">
+  <div class="grid">
+    <div class="card card-wide">
+      <h2>Start here</h2>
+      <p>If you want to help but don’t want to be misled, overwhelmed, or performative, start here.</p>
+      <p>This site focuses on <strong>people</strong> — not governments, parties, or ideology. You don’t need to do everything. Pick what fits you.</p>
+      <p class="hint">Use the map to pick a place, or jump to resources and causes below.</p>
+    </div>
+  </div>
+</section>
+<h2>🧭 Causes</h2>
+<div class="map-causes-grid">
+
+  <!-- LEFT: MAP -->
+  <section id="map" class="anchor" aria-label="Map of causes">
+   
+    <div class="card map-card">
+      <div class="map-menu" aria-label="Map filters">
+        <label title="Show archived / inactive crises">
+          <input id="toggleArchived" type="checkbox" /> Archived
+        </label>
+        <span class="sep">|</span>
+        <label class="place-label" title="Filter map by place">
+          <span>Place</span>
+          <select id="placeFilter" aria-label="Filter by place">
+            <option value="all">All</option>
+          </select>
+        </label>
+      </div>
+
+      <svg id="causeMap" role="img" aria-label="World map with causes"></svg>
+
+      <div class="legend" aria-label="Map legend">
+        <span class="dot active"></span> Active
+        <span class="dot archived"></span> Archived
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RIGHT: CAUSES LIST -->
+  <section id="causes" class="anchor" aria-label="Causes">
+    <div class="card">
+      <ul>
+        <li><a href="/topics/causes/environment/">🍃 Environment 🍃</a></li>
+        <li><a href="/topics/causes/afganistan/">Afganistan</a></li>
+        <li><a href="/topics/causes/drc/">DRC</a></li>
+        <li><a href="/topics/causes/gaza/">Gaza</a></li>
+        <li><a href="/topics/causes/iran/">Iran</a></li>
+        <li><a href="/topics/causes/sudan/">Sudan</a></li>
+        <li><a href="/topics/causes/ukraine/">Ukraine</a></li>
+        <li><a href="/topics/causes/usa/">United States</a></li>
+        <li><a href="/topics/causes/yemen/">Yemen</a></li>
+      </ul>
+      <p class="hint" style="margin-top:0.5rem">
+        Older / inactive crises live on the map under <em>Archived</em>.
+      </p>
+    </div>
+  </section>
+
+</div>
+
+<section id="resources" class="anchor" aria-label="Resources">
+  <div class="grid">
+    <div class="card">
+      <h2>🧰 Resources</h2>
+      <p>Cross-cause tools for staying informed, safe, and effective.</p>
+      <ul>
+        <li><a href="/topics/resources/journalism/"><strong>Journalism</strong></a>: media landscape · supporting reporting · fact-checking</li>
+        <li><a href="/topics/resources/protesting-safely/"><strong>Protesting safely</strong></a>: before · during · legal &amp; aftercare · digital safety</li>
+        <li><a href="/topics/resources/guides/"><strong>Guides</strong></a>: how to help · vetting · avoiding scams</li>
+        <li><a href="/topics/resources/digital-safety/"><strong>Digital safety</strong></a>: privacy basics · account hardening · safer sharing</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contribute" class="anchor section-gap">
+  <h2>Contribute</h2>
+  <p class="tagline small">Hello, fellow human! Thanks for stopping by. 🩷</p>
+
+  <p>
+    This site aims to be as objective and practical as possible. It is not a place for political debate.
+    It exists to help people, regardless of the labels or categories others may try to impose.
+     </p>
+
+  <p>
+    <strong>Humans Not Biz</strong> is a public, open-source project built through collaboration.
+    It collects actions, vetted organizations, journalism resources, protest safety guidance,
+    and, when relevant, high-impact petitions.
+  </p>
+
+  <p>
+    Donations are not needed for the current traffic and workload.
+    This site is not influenced by governments, companies, or other entities with hidden agendas.
+    All changes are reviewed and merged in the spirit of open source.
+  </p>
+
+  <p>
+    👉 You can help by improving content, adding sources, fixing errors, or suggesting updates.
+    Everything happens openly on GitHub. 👈
+  </p>
+
+  <a
+    class="github-button"
+    href="https://github.com/humansnotbiz/humansnotbiz"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    → Contribute on GitHub
+  </a>
+</section>
