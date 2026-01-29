@@ -15,3 +15,5 @@ Practical ways to help — action-first, sourced, and safe.
 
 ## Support journalism
 - (placeholder)
+- ICE-list
+- Mandami
