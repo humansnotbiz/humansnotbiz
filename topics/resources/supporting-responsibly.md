@@ -56,6 +56,18 @@ Common red flags because situations of crisis can attract oportunists and bad ac
 
   <div class="tool-card">
     <div class="tool-media">
+      <img src="/assets/media/open-collective.png" alt="Open Collective screenshot placeholder">
+    </div>
+    <h4>
+      <a href="https://opencollective.com/" target="_blank" rel="noopener">
+        Open Collective
+      </a>
+    </h4>
+    <p>Radical transparency for community driven initiatives. Every expense is public and traceable.</p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
       <img src="/assets/media/propublica.png" alt="ProPublica Nonprofit Explorer screenshot placeholder">
     </div>
     <h4>
