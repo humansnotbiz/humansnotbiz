@@ -1,48 +1,87 @@
 ---
+layout: layouts/resource.njk
 title: Digital Safety
 description: Privacy basics, account security, and safer sharing practices.
-layout: layouts/resource.njk
 lastReviewed: 2026-01-27
 ---
 
 # 🔐 Digital Safety
 
-## Privacy basics
+- [Privacy basics](#privacy-basics)
+- [Account hardening](#account-hardening)
+- [Safer sharing](#safer-sharing)
+- [Useful tools](#useful-tools)
 
-Privacy isn’t secrecy — it’s control.
+---
 
-Be aware of:
-- Location data
-- Metadata in photos and files
+<h2 id="privacy-basics">Privacy basics</h2>
+
+- Location data on your devices
+- Metadata in photos, videos, and documents
 - Search history and browsing habits
-
-Small changes can significantly reduce exposure.
+- App permissions and background tracking
 
 ---
 
-## Account hardening
+<h2 id="account-hardening">Account hardening</h2>
 
-Most accounts aren’t lost through hacking — but through neglect.
-
-Good practices:
+Most accounts are not compromised through advanced hacking, but through more boring measurements like password reuse, weak passwords, or unsecured recovery options. Please make sure you:
 - Use a password manager
-- Enable two-factor authentication
+- Enable two factor authentication wherever possible
 - Secure recovery emails and backup codes
-
-Boring security is effective security.
+- Keep devices and apps up to date
 
 ---
 
-## Safer sharing
+<h2 id="safer-sharing">Safer sharing</h2>
 
-Visibility can help — or harm.
+Before posting or sharing:
+- Could this expose someone else to harm?
+- Does it provide context or just amplify outrage?
+- Is the information verified?
+- Is sharing necessary at all?
 
-Before posting:
-- Could this expose someone else?
-- Does it add context or just outrage?
-- Is sharing necessary?
+---
 
-Pause before posting. People matter more than reach.
+<h2 id="useful-tools">Useful tools</h2>
 
-Todo:
-- https://activistchecklist.org/
+<div class="tool-grid">
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/activist-checklist.png" alt="Activist Checklist screenshot placeholder">
+    </div>
+    <h4>
+      <a href="https://activistchecklist.org/" target="_blank" rel="noopener">
+        Activist Checklist
+      </a>
+    </h4>
+    <p>Clear, practical guidance on digital safety, privacy, and risk awareness for activists and organizers.</p>
+  </div>
+
+  <div class="tool-card">
+  <div class="tool-media">
+    <img src="/assets/media/access-now.png" alt="Access Now screenshot placeholder">
+  </div>
+  <h4>
+    <a href="https://www.accessnow.org/help/" target="_blank" rel="noopener">
+      Access Now Digital Security Helpline
+    </a>
+  </h4>
+  <p>Emergency digital security support for activists, journalists, and civil society facing online threats.</p>
+</div>
+
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/consumer-reports.png" alt="Security Planner screenshot placeholder">
+    </div>
+    <h4>
+      <a href="https://securityplanner.consumerreports.org/" target="_blank" rel="noopener">
+        Security Planner
+      </a>
+    </h4>
+    <p>Personalized security recommendations based on your situation and risk level.</p>
+  </div>
+
+</div>
