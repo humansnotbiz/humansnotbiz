@@ -1,4 +1,11 @@
-# Democratic Republic of the Congo (DRC)
+---
+title: Democratic Republic of the Congo
+permalink: "/topics/causes/drc/index.html"
+layout: layouts/resource.njk
+lastReviewed: 2026-01-30
+---
+
+# Democratic Republic of the Congo
 
 ### Causes:
 - [Conflict and humanitarian crisis](#cause-conflict-and-humanitarian-crisis)

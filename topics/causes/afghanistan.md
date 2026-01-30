@@ -1,3 +1,10 @@
+---
+title: Afghanistan
+permalink: "/topics/causes/afghanistan/index.html"
+layout: layouts/resource.njk
+lastReviewed: 2026-01-30
+---
+
 # Afghanistan
 
 ### Causes:

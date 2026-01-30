@@ -1,13 +1,20 @@
+---
+title: USA
+permalink: "/topics/causes/usa/index.html"
+layout: layouts/resource.njk
+lastReviewed: 2026-01-30
+---
+
 # USA
 
 ### Causes:
-- [Immigration enforcement and ICE controversy](#cause-immigration-enforcement-and-ice-controversy)
+- [Immigration enforcement and ICE](#cause-immigration-enforcement-and-ice)
   - [Understand](#understand)
   - [Take Action](#take-action)
 
 ---
 
-## Immigration enforcement and ICE controversy
+## Immigration enforcement and ICE
 
 <h3 id="understand">Understand</h3>
 

@@ -1,3 +1,10 @@
+---
+title: Myanmar
+permalink: "/topics/causes/myanmar/index.html"
+layout: layouts/resource.njk
+lastReviewed: 2026-01-30
+---
+
 # Myanmar
 
 ### Causes:

@@ -1,3 +1,10 @@
+---
+title: Iran
+permalink: "/topics/causes/iran/index.html"
+layout: layouts/resource.njk
+lastReviewed: 2026-01-30
+---
+
 # Iran
 
 ### Causes:

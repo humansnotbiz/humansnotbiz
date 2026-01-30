@@ -1,3 +1,10 @@
+---
+title: Venezuela
+permalink: "/topics/causes/venezuela/index.html"
+layout: layouts/resource.njk
+lastReviewed: 2026-01-30
+---
+
 # Venezuela
 
 ### Causes:

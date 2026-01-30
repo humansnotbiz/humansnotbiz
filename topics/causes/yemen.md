@@ -1,3 +1,10 @@
+---
+title: Yemen
+permalink: "/topics/causes/yemen/index.html"
+layout: layouts/resource.njk
+lastReviewed: 2026-01-30
+---
+
 # Yemen
 
 ### Causes:
