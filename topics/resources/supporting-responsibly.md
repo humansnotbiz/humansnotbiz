@@ -26,7 +26,7 @@ Common red flags because situations of crisis can attract oportunists and bad ac
 
 ---
 
-### Useful tools
+<h3 id="useful-tools">Useful tools</h3>
 
 <div class="tool-grid tool-grid-scroll">
 
