@@ -7,11 +7,18 @@ lastReviewed: 2026-01-29
 
 # 📚 Understanding Context
 
+- [How to use this section](#how-to-use-this-section)
+- [Capitalism](#capitalism)
+- [Colonialism](#colonialism)
+- [Power, institutions, and democratic erosion](#power-institutions-and-democratic-erosion)
+
+---
+
 These books, films, and documentaries provide historical and structural context for understanding how economic systems, colonial legacies, and power imbalances shape many modern crises.
 
 This is **not a list you are expected to agree with**. It is a set of perspectives commonly referenced in discussions about global harm.
 
-## How to use this section
+<h2 id="how-to-use-this-section"> How to use this section </h2>
 
 - Read critically, not devotionally
 - Cross reference claims
@@ -24,7 +31,7 @@ Meanwhile, I will start, either things I have read or watched, or items on my bu
 
 ---
 
-## Capitalism
+<h2 id="capitalism">Capitalism</h2>
 
 <h3>Books</h3>
 
@@ -124,7 +131,7 @@ Meanwhile, I will start, either things I have read or watched, or items on my bu
 
 ---
 
-## Colonialism
+<h2 id="colonialism">Colonialism</h2>
 
 <h3>Books</h3>
 
@@ -210,7 +217,7 @@ Meanwhile, I will start, either things I have read or watched, or items on my bu
 
 </div>
 
-## Power, institutions, and democratic erosion
+<h2 id="power-institutions-and-democratic-erosion">Power, institutions, and democratic erosion</h2> 
 
 ### Books
 
