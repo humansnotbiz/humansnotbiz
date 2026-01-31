@@ -46,7 +46,11 @@ Immigration courts and the administrative system are facing record backlogs, lea
 ---
 
 #### Show up (protests and solidarity)
-Recent anti-ICE protests and demonstrations have taken place in cities across the country, mobilizing communities in response to enforcement operations and fatal incidents involving federal agents. Participation in peaceful protests, rallies, and community solidarity events is one way people show support for immigrant rights and demand accountability. :contentReference[oaicite:3]{index=3}
+Before attending a protest make sure to check the **[Protesting Safely](/topics/resources/protesting-safely)** resources.
+- **[ICE Out / People Over Papers](https://iceout.org/en/)** - Community focused platform tracking ICE activity and related public actions. Often used by organizers to share mobilizations, protests, and solidarity events. Search by city or keywords like “ICE” or “immigration”.
+- **[Find A Protest](https://www.findaprotest.info/)** - Community maintained listings of protests, marches, and vigils across the US. Frequently updated and location based. Search by city or keywords like “ICE” or “immigration”.
+- **[Protest Map](https://protestmap.info/)** - Interactive map of recent and planned protests in the United States. Useful for spotting regional activity and patterns.
+
 
 ---
 
