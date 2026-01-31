@@ -5,24 +5,23 @@
  *  3) Map UI can be removed from HTML (map still renders).
  */
 (function () {
-    // ✅ One-switch feature flag:
+    // One-switch feature flag:
     // ARCHIVE DISABLED: archived markers are hidden everywhere.
     const ENABLE_ARCHIVE = false;
 
     // Grab DOM elements (some pages may not have all of them)
     const svg = window.d3?.select?.("#causeMap");
-    const toggle = ENABLE_ARCHIVE ? document.getElementById("toggleArchived") : null; // optional
-    const placeFilter = document.getElementById("placeFilter"); // optional (may be commented out in HTML)
+    const toggle = ENABLE_ARCHIVE ? document.getElementById("toggleArchived") : null;
+    const placeFilter = document.getElementById("placeFilter");
     const typedTarget = document.getElementById("typedTarget");
 
-    // --- Non-fatal checks (only visible in DevTools console) ---
+    // Non-fatal checks (only visible in DevTools console)
     try {
         console.assert(!!typedTarget, "#typedTarget should exist (homepage header)");
     } catch (_) { }
 
     /**
      * Typing animation for the header motto.
-     * Cycles through: governments · borders · politics · businesses · capitalism
      */
     function startTyping() {
         if (!typedTarget) return;
@@ -76,10 +75,37 @@
         setTimeout(tick, 350);
     }
 
-    startTyping();
+    /**
+     * Scroll-to-top button behavior.
+     * Markup is expected to exist (via shared layout include).
+     */
+    function initScrollToTop() {
+        const btn = document.getElementById("scrollToTop");
+        if (!btn) return;
 
-    // Map needs these elements + d3/topojson; if missing, stop here (typing can still run).
-    // NOTE: placeFilter/toggle are optional; map UI may be removed from HTML.
+        const prefersReducedMotion =
+            window.matchMedia &&
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        function toggleVisibility() {
+            btn.style.display = window.scrollY > 300 ? "flex" : "none";
+        }
+
+        btn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: prefersReducedMotion ? "auto" : "smooth",
+            });
+        });
+
+        window.addEventListener("scroll", toggleVisibility, { passive: true });
+        toggleVisibility();
+    }
+
+    startTyping();
+    initScrollToTop();
+
+    // Stop here if map dependencies are missing
     if (!svg?.node?.() || !window.d3 || !window.topojson) return;
 
     async function loadMarkers() {
@@ -89,7 +115,6 @@
     }
 
     function markerHref(d) {
-        // Convention: /profiles/causes/<slug>.html
         const raw = String(d.id).replace(/^cause-/, "");
         return `profiles/causes/${raw}.html`;
     }
@@ -97,46 +122,30 @@
     async function run() {
         const markers = await loadMarkers();
 
-        // More non-fatal checks
-        try {
-            console.assert(
-                Array.isArray(markers) && markers.length > 0,
-                "markers should be a non-empty array"
-            );
-            console.assert(
-                markers.every((m) => m.status === "active" || m.status === "archived"),
-                "marker status must be active|archived"
-            );
-        } catch (_) { }
-
         const width = svg.node().clientWidth || 900;
         const height = svg.node().clientHeight || 380;
         svg.attr("viewBox", `0 0 ${width} ${height}`);
 
-        // Natural Earth projection fit to the SVG box, with tighter padding for better density
         const padding = Math.max(6, Math.min(width, height) * 0.02);
-        const projection = d3
-            .geoNaturalEarth1()
-            .fitExtent(
-                [
-                    [padding, padding],
-                    [width - padding, height - padding],
-                ],
-                { type: "Sphere" }
-            );
+        const projection = d3.geoNaturalEarth1().fitExtent(
+            [
+                [padding, padding],
+                [width - padding, height - padding],
+            ],
+            { type: "Sphere" }
+        );
+
         const geoPath = d3.geoPath(projection);
 
         function drawFrame() {
-            svg
-                .append("path")
+            svg.append("path")
                 .attr("d", geoPath({ type: "Sphere" }))
                 .attr("fill", "rgba(23,26,33,0.6)")
                 .attr("stroke", "rgba(38,42,54,1)");
         }
 
         function drawLand(countries) {
-            svg
-                .append("g")
+            svg.append("g")
                 .selectAll("path")
                 .data(countries.features)
                 .enter()
@@ -147,31 +156,9 @@
                 .attr("stroke-width", 0.5);
         }
 
-        function populatePlaceFilter() {
-            if (!placeFilter) return;
-
-            const places = Array.from(new Set(markers.map((m) => m.place))).sort((a, b) =>
-                a.localeCompare(b)
-            );
-
-            // Keep existing "All" option; append the rest
-            for (const place of places) {
-                const opt = document.createElement("option");
-                opt.value = place;
-                opt.textContent = place;
-                placeFilter.appendChild(opt);
-            }
-        }
-
         function filteredMarkers(showArchived) {
-            // Archive can be hard-disabled via ENABLE_ARCHIVE.
             const allowArchived = ENABLE_ARCHIVE && showArchived;
-            const show = markers.filter((m) => m.status === "active" || allowArchived);
-
-            // Place filter is optional; if missing, show all.
-            const sel = placeFilter ? placeFilter.value || "all" : "all";
-            if (sel === "all") return show;
-            return show.filter((m) => m.place === sel);
+            return markers.filter((m) => m.status === "active" || allowArchived);
         }
 
         function drawMarkers(showArchived) {
@@ -179,8 +166,8 @@
             const data = filteredMarkers(showArchived);
 
             const g = svg.append("g").attr("class", "markers");
-            const circles = g
-                .selectAll("circle")
+
+            g.selectAll("circle")
                 .data(data, (d) => d.id)
                 .enter()
                 .append("circle")
@@ -191,13 +178,10 @@
                     d.status === "archived" ? "rgba(160,166,184,0.7)" : "var(--accent)"
                 )
                 .attr("opacity", (d) => (d.status === "archived" ? 0.6 : 0.9))
-                .style("cursor", "pointer");
-
-            circles.append("title").text((d) => `${d.label} (${d.status})`);
-
-            circles.on("click", (_, d) => {
-                window.location.href = markerHref(d);
-            });
+                .style("cursor", "pointer")
+                .on("click", (_, d) => {
+                    window.location.href = markerHref(d);
+                });
         }
 
         async function render(showArchived = false) {
@@ -212,25 +196,12 @@
                 const countries = topojson.feature(topo, topo.objects.countries);
                 drawLand(countries);
             } catch (_) {
-                // Offline or blocked: show frame + markers only
+                // Ignore, render frame + markers only (offline/blocked)
             }
 
             drawMarkers(showArchived);
         }
 
-        // Place filter always optional
-        if (placeFilter) {
-            placeFilter.addEventListener("change", () =>
-                render(ENABLE_ARCHIVE && toggle ? toggle.checked : false)
-            );
-        }
-
-        // Toggle is optional and may be disabled
-        if (ENABLE_ARCHIVE && toggle) {
-            toggle.addEventListener("change", () => render(toggle.checked));
-        }
-
-        populatePlaceFilter();
         render(false);
     }
 
