@@ -519,3 +519,42 @@ x .scroll-to-top:hover {
     outline: none;
     box-shadow: 0 0 0 2px rgba(122, 162, 255, 0.4);
 }
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--muted);
+}
+
+.social-links a:hover {
+    color: var(--text);
+    border-color: var(--accent);
+    background: rgba(122, 162, 255, 0.08);
+    text-decoration: none;
+}
+
+.social-links svg.icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    display: block;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 600px) {
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

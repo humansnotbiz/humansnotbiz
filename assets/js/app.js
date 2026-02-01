@@ -116,7 +116,7 @@
 
     function markerHref(d) {
         const raw = String(d.id).replace(/^cause-/, "");
-        return `profiles/causes/${raw}.html`;
+        return `topics/causes/${raw}`;
     }
 
     async function run() {
