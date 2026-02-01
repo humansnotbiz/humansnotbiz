@@ -7,7 +7,7 @@ The website [www.humansnot.biz](https://www.humansnot.biz/) and this repository 
 
 Below you will find simple instructions to make contributing as easy and painless as possible.
 
-As of February 2026, this project is maintained by one person, who is, of course, subjective and limited in knowledge and perspective (no international relations or history background). That is exactly why collaboration matters here.
+As of February 2026, this project is maintained by one person, who is, of course, subjective and limited in knowledge and perspective (no international relations, history, etc. background). That is exactly why collaboration matters here.
 
 The goal is simple, at least in theory:
 
@@ -54,7 +54,7 @@ All content lives in this GitHub repository and is written in plain Markdown fil
 The process is intentionally simple:
 
 1. A cause or resource is added or updated  
-2. Sources are linked whenever possible  
+2. Sources are linked (mandatory)
 3. Content is reviewed by others (ideally approved by two people before publishing)  
 4. Improvements happen over time  
 
@@ -91,7 +91,8 @@ You can contribute by:
 - Suggesting new causes or resources
 - Pointing out errors or outdated information
 
-I’m currently thinking through additional contribution channels beyond GitHub. Thanks for your patience 😜
+PS: I’m currently thinking through additional contribution channels beyond GitHub. Thanks for your patience 😜
+
 ---
 
 ## GitHub basics (quick guide)
@@ -157,6 +158,12 @@ This project should and will not be influenced by:
 
 No donations are required or expected at this time.  
 Please donate directly to the causes you care about instead.
+
+---
+
+### Legal note
+
+This project is for informational purposes only. Always check the linked sources, but also consider local laws and personal risk, and use your own judgment before acting.
 
 ---
 
