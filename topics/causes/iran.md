@@ -20,6 +20,34 @@ lastReviewed: 2026-01-30
 
 Iran is experiencing a severe human rights crisis driven by widespread repression of protests, arbitrary arrests, violent crackdowns by security forces, and systemic restrictions on freedoms of expression, assembly, and association. Recent nationwide demonstrations since late 2025 have been met with lethal force, with thousands killed and tens of thousands arrested amid economic hardship and rising living costs. Women human rights defenders, ethnic and religious minorities, and civilians including children have been targeted. Iran’s judiciary also carries out executions at high rates, and enforced disappearances, torture, and unfair trials are reported. The government continues to tightly control digital communication and civic space. :contentReference[oaicite:0]{index=0}
 
+
+### Accountability
+<div class="tool-grid tool-grid-scroll">
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/ali-khamenei.png" alt="Ali Khamenei portrait">
+    </div>
+    <h4><a href="https://en.wikipedia.org/wiki/Ali_Khamenei" target="_blank" rel="noopener">Ali Khamenei</a></h4>
+    <p>Supreme Leader with ultimate authority over security forces and state repression.</p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/masoud-pezeshkian.png" alt="Masoud Pezeshkian portrait">
+    </div>
+    <h4><a href="https://en.wikipedia.org/wiki/Masoud_Pezeshkian" target="_blank" rel="noopener">Masoud Pezeshkian</a></h4>
+    <p>President operating within the system enabling crackdowns, arrests, and rights restrictions.</p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/hossein-salami.png" alt="Hossein Salami portrait">
+    </div>
+    <h4><a href="https://en.wikipedia.org/wiki/Hossein_Salami" target="_blank" rel="noopener">Hossein Salami (†)</a></h4>
+    <p>IRGC commander associated with violent suppression and coercive security operations.</p>
+  </div>
+</div>
+
 ---
 
 <h3 id="take-action">Take action</h3>

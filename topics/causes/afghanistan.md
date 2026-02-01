@@ -16,7 +16,7 @@ lastReviewed: 2026-01-30
 
 ## Women and girls’ rights
 
-<h3 id="understand">Understand</h2>
+<h3 id="understand">Understand</h3>
 
 Since 2021, Afghanistan has been governed by the Taliban, who have imposed nationwide restrictions on women and girls. These include bans on secondary and higher education, exclusion from most employment, and severe limits on movement and public life.
 
@@ -28,6 +28,34 @@ The dismantling of legal protections, combined with economic collapse and reduce
 - [Human Rights Watch - Afghanistan](https://www.hrw.org/asia/afghanistan)
 - [Amnesty International - Afghanistan](https://www.amnesty.org/en/location/asia-and-the-pacific/south-asia/afghanistan/)
 - [International Crisis Group - Afghanistan](https://www.crisisgroup.org/asia/south-asia/afghanistan)
+
+### Accountability
+
+<div class="tool-grid tool-grid-scroll">
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/hibatullah-akhundzada.png" alt="Hibatullah Akhundzada portrait">
+    </div>
+    <h4><a href="https://en.wikipedia.org/wiki/Hibatullah_Akhundzada" target="_blank" rel="noopener">Hibatullah Akhundzada</a></h4>
+    <p>Taliban supreme leader, ultimate authority over nationwide repression, including women’s rights bans.</p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/sirajuddin-haqqani.png" alt="Sirajuddin Haqqani portrait">
+    </div>
+    <h4><a href="https://en.wikipedia.org/wiki/Sirajuddin_Haqqani" target="_blank" rel="noopener">Sirajuddin Haqqani</a></h4>
+    <p>Interior minister overseeing policing, arrests, and internal security enforcement.</p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/abdul-ghani-baradar.png" alt="Abdul Ghani Baradar portrait">
+    </div>
+    <h4><a href="https://en.wikipedia.org/wiki/Abdul_Ghani_Baradar" target="_blank" rel="noopener">Abdul Ghani Baradar</a></h4>
+    <p>Senior Taliban political leader shaping governance and international positioning.</p>
+  </div>
+</div>
 
 ---
 

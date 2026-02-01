@@ -29,6 +29,114 @@ Humanitarian organizations continue to respond under difficult conditions, with 
 - [ICRC - Israel and the occupied territories](https://www.icrc.org/en/where-we-work/middle-east/israel-and-occupied-territories)
 - [ReliefWeb - oPt](https://reliefweb.int/country/pse)
 
+### Accountability
+
+<div class="tool-grid tool-grid-scroll">
+
+  <!-- ISRAELI LEADERSHIP -->
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/benjamin-netanyahu.png" alt="Benjamin Netanyahu portrait">
+    </div>
+    <h4>
+      <a href="https://en.wikipedia.org/wiki/Benjamin_Netanyahu" target="_blank" rel="noopener">
+        Benjamin Netanyahu
+      </a>
+    </h4>
+    <p>
+      Prime minister with ultimate authority over military strategy, blockade policy, and continuation of the war. (ICC arrest warrant issued)
+    </p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/yoav-gallant.png" alt="Yoav Gallant portrait">
+    </div>
+    <h4>
+      <a href="https://en.wikipedia.org/wiki/Yoav_Gallant" target="_blank" rel="noopener">
+        Yoav Gallant
+      </a>
+    </h4>
+    <p>
+      Defense minister responsible for directing military operations and rules of engagement affecting civilians. (ICC arrest warrant issued)
+    </p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/herzi-halevi.png" alt="Herzi Halevi portrait">
+    </div>
+    <h4>
+      <a href="https://en.wikipedia.org/wiki/Herzi_Halevi" target="_blank" rel="noopener">
+        Herzi Halevi
+      </a>
+    </h4>
+    <p>
+      Chief of the General Staff overseeing execution of Israeli military operations in Gaza.
+    </p>
+  </div>
+
+  <!-- HAMAS LEADERSHIP -->
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/yahya-sinwar.png" alt="Yahya Sinwar portrait">
+    </div>
+    <h4>
+      <a href="https://en.wikipedia.org/wiki/Yahya_Sinwar" target="_blank" rel="noopener">
+        Yahya Sinwar (†)
+      </a>
+    </h4>
+    <p>
+      De facto Hamas leader in Gaza and primary architect of the October 7 attack that triggered the current war.
+    </p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/mohammed-deif.png" alt="Mohammed Deif portrait">
+    </div>
+    <h4>
+      <a href="https://en.wikipedia.org/wiki/Mohammed_Deif" target="_blank" rel="noopener">
+        Mohammed Deif (†)
+      </a>
+    </h4>
+    <p>
+      Longtime head of Hamas’s military wing, responsible for planning and directing large-scale attacks over decades. (ICC arrest warrant issued)
+    </p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/ismail-haniyeh.png" alt="Ismail Haniyeh portrait">
+    </div>
+    <h4>
+      <a href="https://en.wikipedia.org/wiki/Ismail_Haniyeh" target="_blank" rel="noopener">
+        Ismail Haniyeh (†)
+      </a>
+    </h4>
+    <p>
+      Former political leader central to Hamas’s international strategy, funding, and long-term governance decisions.
+    </p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/khalil-al-hayya.png" alt="Khalil al-Hayya portrait">
+    </div>
+    <h4>
+      <a href="https://en.wikipedia.org/wiki/Khalil_al-Hayya" target="_blank" rel="noopener">
+        Khalil al-Hayya
+      </a>
+    </h4>
+    <p>
+      Senior Hamas political figure involved in post–October 7 decision making, negotiations, and continuation of armed conflict.
+    </p>
+  </div>
+
+</div>
+
 ---
 
 <h3 id="take-action">Take action</h3>

@@ -29,6 +29,34 @@ The crisis is intensified by weak infrastructure, limited protection for civilia
 - [Human Rights Watch - DRC](https://www.hrw.org/africa/democratic-republic-congo)
 - [ReliefWeb - DRC](https://reliefweb.int/country/cod)
 
+
+### Accountability
+<div class="tool-grid tool-grid-scroll">
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/felix-tshisekedi.png" alt="Felix Tshisekedi portrait">
+    </div>
+    <h4><a href="https://en.wikipedia.org/wiki/F%C3%A9lix_Tshisekedi" target="_blank" rel="noopener">Felix Tshisekedi</a></h4>
+    <p>President, accountable for persistent state failure to protect civilians and stabilize the east.</p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/paul-kagame.png" alt="Paul Kagame portrait">
+    </div>
+    <h4><a href="https://en.wikipedia.org/wiki/Paul_Kagame" target="_blank" rel="noopener">Paul Kagame</a></h4>
+    <p>Rwandan president widely accused of enabling armed actors destabilizing eastern DRC.</p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/sultani-makenga.png" alt="Sultani Makenga portrait">
+    </div>
+    <h4><a href="https://en.wikipedia.org/wiki/Sultani_Makenga" target="_blank" rel="noopener">Sultani Makenga</a></h4>
+    <p>Senior M23 commander linked to violence, displacement, and armed territorial control.</p>
+  </div>
+</div>
+
 ---
 
 <h3 id="take-action">Take action</h3>

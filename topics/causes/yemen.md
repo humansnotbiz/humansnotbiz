@@ -27,6 +27,34 @@ Yemen has been engulfed in a devastating conflict since 2014, with widespread fi
 - [Human Rights Watch - Yemen](https://www.hrw.org/middle-east/n-africa/yemen)
 - [ReliefWeb - Yemen](https://reliefweb.int/country/yem)
 
+
+<div class="tool-grid tool-grid-scroll">
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/abdul-malik-al-houthi.png" alt="Abdul-Malik al-Houthi portrait">
+    </div>
+    <h4><a href="https://en.wikipedia.org/wiki/Abdul-Malik_al-Houthi" target="_blank" rel="noopener">Abdul-Malik al-Houthi</a></h4>
+    <p>Houthi leader responsible for war governance, coercion, and obstruction of civil life in areas controlled.</p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/mohammed-bin-salman.png" alt="Mohammed bin Salman portrait">
+    </div>
+    <h4><a href="https://en.wikipedia.org/wiki/Mohammed_bin_Salman" target="_blank" rel="noopener">Mohammed bin Salman</a></h4>
+    <p>Saudi crown prince strongly associated with directing the regional intervention and escalation.</p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/rashad-al-alimi.png" alt="Rashad al-Alimi portrait">
+    </div>
+    <h4><a href="https://en.wikipedia.org/wiki/Rashad_al-Alimi" target="_blank" rel="noopener">Rashad al-Alimi</a></h4>
+    <p>Chair of the internationally recognized PLC, accountable for governance, corruption control, and aid access.</p>
+  </div>
+</div>
+
+
 ---
 
 <h3 id="take-action">Take action</h3>

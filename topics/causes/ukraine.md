@@ -29,6 +29,33 @@ Humanitarian needs remain high, especially for displaced families, older people,
 - [Human Rights Watch - Ukraine](https://www.hrw.org/europe/central-asia/ukraine)
 - [International Crisis Group - Ukraine](https://www.crisisgroup.org/europe-central-asia/eastern-europe/ukraine)
 
+### Accountability
+
+<div class="tool-grid tool-grid-scroll">
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/vladimir-putin.png" alt="Vladimir Putin portrait">
+    </div>
+    <h4><a href="https://en.wikipedia.org/wiki/Vladimir_Putin" target="_blank" rel="noopener">Vladimir Putin</a></h4>
+    <p>Russian president who ordered and sustains the invasion and occupation. (ICC arrest warrant issued)</p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/valery-gerasimov.png" alt="Valery Gerasimov portrait">
+    </div>
+    <h4><a href="https://en.wikipedia.org/wiki/Valery_Gerasimov" target="_blank" rel="noopener">Valery Gerasimov</a></h4>
+    <p>Senior military commander directing strategy and major operations. (ICC arrest warrant issued)</p>
+  </div>
+
+  <div class="tool-card">
+    <div class="tool-media">
+      <img src="/assets/media/people/sergei-shoigu.png" alt="Sergei Shoigu portrait">
+    </div>
+    <h4><a href="https://en.wikipedia.org/wiki/Sergei_Shoigu" target="_blank" rel="noopener">Sergei Shoigu</a></h4>
+    <p>Former defense minister strongly associated with the war’s execution and escalation. (ICC arrest warrant issued)</p>
+  </div>
+</div>
 ---
 
 <h3 id="take-action">Take action</h3>
