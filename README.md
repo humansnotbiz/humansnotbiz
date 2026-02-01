@@ -3,7 +3,7 @@
 Hi there 👋  
 Thank you for your interest in Humans Not Biz.
 
-This website and repository are a small, bottom up, people driven project focused on helping people, regardless of governments, parties, religions, or ideologies.
+The website [www.humansnot.biz](https://www.humansnot.biz/) and this repository are a small, bottom up, people driven project focused on helping people, regardless of governments, parties, religions, or ideologies.
 
 Below you will find simple instructions to make contributing as easy and painless as possible.
 
