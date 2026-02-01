@@ -91,6 +91,14 @@ h1 {
     font-size: 1rem;
 }
 
+@media (max-width: 600px) {
+    .tagline {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+}
+
+
 section.anchor {
     scroll-margin-top: 88px;
 }
