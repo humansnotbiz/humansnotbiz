@@ -5,14 +5,19 @@ layout: layouts/resource.njk
 lastReviewed: 2026-01-30
 ---
 
-<section class="tool-card" style="padding:16px; border:1px solid var(--border); border-radius:16px;">
+# Epstein Documents
+
+<section
+  class="tool-card js-epstein-status"
+  style="padding:16px; border:1px solid var(--border); border-radius:16px;"
+  data-deadline-utc="2025-12-19T12:00:00Z"
+>
   <h3 style="margin-top:0;">Release status</h3>
 
   <p style="margin:0 0 10px 0;">
     <strong>Legal deadline:</strong> December 19, 2025<br>
     <strong>Status:</strong> Deadline missed<br>
-    <strong>Time overdue:</strong>
-    <span id="epsteinElapsed">calculating…</span><br>
+    <strong>Time overdue:</strong> <span class="js-epstein-elapsed">calculating…</span><br>
     <strong>Next public release:</strong> No date announced
   </p>
 
@@ -21,62 +26,63 @@ lastReviewed: 2026-01-30
   </p>
 </section>
 
-<script>
-(function () {
-  const el = document.getElementById("epsteinElapsed");
-  if (!el) return;
+<p>
+Below are some of the more incriminating content and source court anchored documents.
+</p>
 
-  // Dec 19, 2025 at 12:00 UTC to avoid timezone edge cases
-  const deadline = new Date(Date.UTC(2025, 11, 19, 12, 0, 0));
+<section
+  class="tool-card js-doc-slider"
+  style="padding:16px; border:1px solid var(--border); border-radius:16px;"
+  data-base="/assets/media/epstein/EFTA02362640/"
+  data-ext="webp"
+  data-pages="20"
+  data-label="Document preview"
+  data-source-url="https://www.justice.gov/epstein/files/DataSet%2011/EFTA02362640.pdf"
+  data-source-text="U.S. Department of Justice, EFTA02362640.pdf"
+>
+  <h3 class="js-doc-slider-title" style="margin-top:0;">Document preview</h3>
 
-  function update() {
-    const now = new Date();
-    let diff = Math.max(0, now - deadline);
+  <div style="border:1px solid var(--border); border-radius:12px; overflow:hidden;">
+    <img
+      class="js-doc-slider-img"
+      src="/assets/media/epstein/EFTA02362640.pdf"
+      alt="Document page preview"
+      style="width:100%; height:auto; display:block;"
+      loading="lazy"
+      decoding="async"
+    >
+  </div>
 
-    const seconds = Math.floor(diff / 1000);
-    const minutes = Math.floor(seconds / 60);
-    const hours = Math.floor(minutes / 60);
-    const days = Math.floor(hours / 24);
+  <div style="display:flex; align-items:center; gap:12px; margin-top:12px; flex-wrap:wrap;">
+    <button class="js-doc-slider-prev" type="button">◀</button>
 
-    const h = hours % 24;
-    const m = minutes % 60;
-    const s = seconds % 60;
+    <label style="display:flex; align-items:center; gap:10px;">
+      <span>Page <strong class="js-doc-slider-page">1</strong></span>
 
-    el.textContent =
-      days + " days " +
-      h + " hours " +
-      m + " minutes " +
-      s + " seconds";
-  }
+      <input
+        class="js-doc-slider-range"
+        type="range"
+        min="1"
+        max="20"
+        value="1"
+        step="1"
+        style="width:min(420px, 60vw);"
+        aria-label="Select page"
+      >
 
-  update();
-  setInterval(update, 1000);
-})();
-</script>
+      <span class="js-doc-slider-total" style="color:var(--muted);">of 20</span>
+    </label>
 
+    <button class="js-doc-slider-next" type="button">▶</button>
+  </div>
 
-Below are some of the more incriminating content and source court anchored documents. 
+  <p style="margin-top:12px;">
+    <strong>Source:</strong>
+    <a class="js-doc-slider-source" href="https://www.justice.gov/epstein/files/DataSet%2011/EFTA02362640.pdf" target="_blank" rel="noopener">
+      U.S. Department of Justice, EFTA02362640.pdf
+    </a>
+  </p>
+</section>
 
- ---
-
- #### Peg <Peg>
-> I really prefer Europe...but I am having a tough time putting it together.=> Aspen is easy and Susan Hess wants me to come to Malibu...
-
-> Will call later...just getting up.
-
-> So glad you came last night.
-
-> The girl was too young. You walked into a room of journalist...including T=na Brown's husband....even though she was adorable and sweet. I wanted to k=lI you. She gave me her first name and I screamed at her to always say her f=II name....I don't care if it's made up. It is s0000 moronic just to say f=rst name...PLEASE get over that.
-
-> Also, I got very nervous that you are back to old tricks. Your next "prob=em" with authorities will be your last.
-
-> I need your friendship too much to lose you...
-
-#### Jeffrey <jeevacation@gmail.com>
-> She s 25 if you prefer I'll stick to 30 and above.
-
-> Sorry for all the typos. Sent from my iPhone
-
-**U.S. Department of Justice, Epstein case materials:**  [EFTA02362640.pdf](https://www.justice.gov/epstein/files/DataSet%2011/EFTA02362640.pdf)
- 
- ---
+<script src="/assets/js/epstein-status.js" defer></script>
+<script src="/assets/js/doc-slider.js" defer></script>
