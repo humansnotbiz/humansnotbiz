@@ -566,3 +566,8 @@ x .scroll-to-top:hover {
         align-items: flex-start;
     }
 }
+
+#epsteinElapsed {
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}

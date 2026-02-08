@@ -8,12 +8,35 @@ lastReviewed: 2026-01-30
 # USA
 
 ### Causes:
+- [Epstein case - Human trafficking and sexual exploitation](#epstein)
+  - [Understand](#epstein-understand)
+    - [Resources](#epstein-resources)
 - [Immigration enforcement and ICE](#cause-immigration-enforcement-and-ice)
   - [Understand](#understand)
   - [Take Action](#take-action)
 
 ---
 
+<h2 id="epstein"> Epstein case - Human trafficking and sexual exploitation </h2>
+
+<h3 id="epstein-understand">Understand</h3>
+
+The Epstein case is a documented human trafficking and sexual exploitation case involving minors, enabled over years by wealth, power, and repeated institutional failures. U.S. courts established that a trafficking network operated across multiple locations, involving recruitment, grooming, transport, and abuse of underage girls.
+
+While core criminal proceedings took place in the United States, the case has international dimensions. Survivors, witnesses, financial transactions, travel, and alleged facilitators span multiple countries. As documents continue to be released or unsealed, authorities and civil courts in other jurisdictions have begun reviewing related evidence, raising the possibility of further investigations beyond the U.S.
+
+<h3 id="epstein-resources">Resources</h3>
+Below are primary sources and court anchored documents. Each item links to a dedicated page with a preview, summary, and key takeaways.
+<a
+    class="github-button"
+    href="/topics/causes/usa/epstein"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    → Epstein Documents
+  </a>
+
+---
 ## Immigration enforcement and ICE
 
 <h3 id="understand">Understand</h3>
